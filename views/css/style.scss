@@ -19,7 +19,8 @@ body > header {
   padding-bottom: 0.5em;
   * { margin: 0; }
   h1 {
-    @include span-13;
+/*     @include span-13; */
+    @include span-22;
     @include border-radius(20px);
     @include box-shadow(3px 3px 2px #888888);
     font: {
@@ -71,8 +72,10 @@ header > nav {
 
 #contents {
   @include column;
-  @include span-17;
-  @include colborder;
+  @include span-23;
+  @include last;
+  /*   @include span-13; */
+  /*   @include colborder; */
 
   section {
       margin: 0 1em;
