@@ -1,0 +1,33 @@
+- @page_title = 'Languages'
+
+!!!
+
+%html(lang='el-GR')
+  %head
+    %meta(charset='utf-8')
+    %title= [@page_title, 'Transmaker Demo'].compact.join(' - ')
+    %link(rel='stylesheet' type='text/css'){:href => @stylesheet || 'css/style.css'}
+
+  %body
+    %header
+      %h1 <a href="."><img src="images/TransmakerIcon128.png" /></a> Transmaker Demo <br> <span class="small">
+      %nav
+        %ul
+          %li <a href="./index.html">Αρχική σελίδα</a>
+          %li <a href="./install.html">Εγκατάσταση</a>
+          %li <a href="./languages.html">Γλώσσες</a>
+          %li <a href="./hotkeys.html">Συντόμευσης</a>
+
+    #contents
+      %section
+        %h1 Γλώσσες
+        
+        %p Χρησιμοποιήστε το <a href="http://www.microsofttranslator.com/dev/">Πρόγραμμα μετατροπής Microsoft ® API</a>
+        %p Για περισσότερα από 36 διαφορετικές γλώσσες
+        %p Αυτή η σελίδα είναι ελληνική.
+
+    %hr
+
+    %footer
+      %p
+        ! Developed by <a href="http://ongaeshi.me/">ongaeshi</a>.
