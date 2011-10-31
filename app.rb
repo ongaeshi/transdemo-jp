@@ -29,7 +29,8 @@ end
 
 get '/*.html' do |path|
   pass unless File.exist?(File.join(options.views, "#{path}.haml"))
-  haml path.to_sym
+  ignore_layout = ['languages', 'hotkeys'].include?(path)
+  haml path.to_sym, :layout => !ignore_layout
 end
 
 get '/*' do |path|
