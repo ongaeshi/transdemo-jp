@@ -1,0 +1,39 @@
+- @page_title = 'Languages'
+
+!!!
+
+%html(lang='ar')
+  %head
+    %meta(charset='utf-8')
+    %title= [@page_title, 'Transmaker Demo'].compact.join(' - ')
+    %link(rel='stylesheet' type='text/css'){:href => @stylesheet || 'css/style.css'}
+
+  %body
+    %header
+      %h1 <a href="."><img src="images/TransmakerIcon128.png" /></a> Transmaker Demo <br> <span class="small">
+      %nav
+        %ul
+          %li <a href="./index.html">الصفحة الرئيسية</a>
+          %li <a href="./install.html">قم بتثبيت</a>
+          %li <a href="./languages.html">اللغات</a>
+          %li <a href="./hotkeys.html">مفاتيح التشغيل السريع</a>
+
+    #contents
+      %section
+        %h1 مفاتيح التشغيل السريع
+        %p يمكنك استخدام مفاتيح التشغيل السريع.
+
+        %table
+          %tr <th>ميزات</th><th>OSX</th><th>Windows</th>
+          %tr <td>استبدال</td><td>⌘+Ctrl+R</td><td>Alt+Shift+R</td>
+          %tr <td>إدراج</td><td>⌘+Ctrl+I</td><td>Alt+Shift+I</td>
+          %tr <td>التراجع عن</td><td>⌘+Ctrl+Z</td><td>Alt+Shift+Z</td>
+
+        %h1 الحوار الترجمة
+        %p يمكنك استخدام مربع الحوار الترجمة لتحويل بحرية.
+
+    %hr
+
+    %footer
+      %p
+        ! Developed by <a href="http://ongaeshi.me/">ongaeshi</a>.
